@@ -3,7 +3,7 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 // Print welcome message
 console.log(chalk.rgb(255, 192, 0)("\n\t Welcome to CodeWithZefi - Currency Converter Project\n\t"));
-//Interbank Currency Rates
+// Interbank Currency Rates
 const currency = {
     USD: 1, //United States Dollar// Base currency
     EUR: 0.93, //States of the European Union Euro
