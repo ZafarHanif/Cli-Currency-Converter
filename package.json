@@ -1,6 +1,6 @@
 {
   "name": "zefi_currency_converter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI based Currency Converter app with TypeScript, Node.js, Inquirer and Chalk",
   "main": "index.js",
   "type": "module",

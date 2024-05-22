@@ -7,7 +7,7 @@ console.log(chalk.rgb(255,192,0)("\n\t Welcome to CodeWithZefi - Currency Conver
 
 // Interbank Currency Rates
 const currency: any = {
-  USD: 1, //United States Dollar// Base currency
+  USD: 1, //United States Dollar (Base currency)
   EUR: 0.93, //States of the European Union Euro
   GBP: 0.8, //United Kingdom Pound Sterling
   SAR: 3.75, //Saudi Arabia Riyal
@@ -21,6 +21,7 @@ const currency: any = {
   BHD: 0.37, //Bahraini Dinar
   OMR: 0.38, //Omani Rial
 };
+
 let user_answer = await inquirer.prompt([
   {
     name: "from",
@@ -79,7 +80,7 @@ let convertedAmount = baseAmount * toAmount;
 if (user_answer.from === user_answer.to) {
   console.log(chalk.rgb(192,0,0)("You selected the same currency for conversion. No conversion needed."));
   } else {
-    console.log(chalk.rgb(0, 176, 240)(convertedAmount));
+    console.log(chalk.rgb(0, 176, 240)(`Converted Amount: ${convertedAmount.toFixed(2)}`));
   console.log(chalk.rgb(112,173,71)(
     `${Amount} ${user_answer.from} equals ${convertedAmount.toFixed(2)} ${
       user_answer.to
